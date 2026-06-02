@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Lato, Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/layout/Header'
+import Footer from '@/components/layout/Footer'
 
 const lato = Lato({
   weight: ['400', '700'],
@@ -86,6 +87,7 @@ export default function RootLayout({
       <body className="font-sans antialiased" style={{ fontFamily: 'var(--font-lato)' }}>
         <Header />
         <main className="min-h-screen">{children}</main>
+        <Footer />
       </body>
     </html>
   )
