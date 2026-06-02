@@ -1,0 +1,311 @@
+import Image from 'next/image'
+import Link from 'next/link'
+import { Metadata } from 'next'
+import PricingSelector from '@/components/infoproductos/PricingSelector'
+
+export const metadata: Metadata = {
+  title: 'Infoproductos - eBooks y Aplicaciones',
+  description: 'Herramientas digitales para el manejo de condiciones neurológicas: eBooks educativos y aplicaciones de seguimiento.',
+}
+
+export default function InfoproductosPage() {
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white pt-24">
+      {/* Hero Section */}
+      <section className="py-16 px-4">
+        <div className="max-w-7xl mx-auto text-center">
+          <span className="text-sm font-bold tracking-[0.2em] text-teal-600 mb-3 block uppercase">
+            Infoproductos
+          </span>
+          <h1 className="font-cormorant text-5xl md:text-6xl font-bold text-slate-900 mb-6">
+            eBooks y Aplicaciones
+          </h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Herramientas digitales diseñadas para empoderar a las familias en el manejo de condiciones neurológicas
+          </p>
+        </div>
+      </section>
+
+      {/* Products Grid */}
+      <section className="py-12 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* eBook Product */}
+            <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200 hover:shadow-3xl transition-all duration-300">
+              {/* Product Image/Header */}
+              <div className="bg-gradient-to-br from-purple-600 to-purple-800 p-12 text-white text-center relative overflow-hidden">
+                <div className="absolute inset-0 opacity-20">
+                  <Image
+                    src="/images/22-02-07-22-59-09-880_deco.jpg"
+                    alt=""
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative z-10">
+                  <div className="text-6xl mb-6">📚</div>
+                  <h2 className="font-cormorant text-4xl font-bold mb-4">
+                    eBook + Pomodoro Timer
+                  </h2>
+                  <p className="text-xl text-purple-100">
+                    Mitos y Realidades del Tratamiento de TDAH
+                  </p>
+                </div>
+              </div>
+
+              {/* Product Content */}
+              <div className="p-10">
+                {/* Pricing */}
+                <div className="mb-8 text-center">
+                  <div className="flex items-baseline justify-center gap-3 mb-3">
+                    <span className="text-5xl font-bold text-slate-900">$27</span>
+                    <span className="text-2xl text-gray-400 line-through">$47</span>
+                  </div>
+                  <div className="inline-block bg-green-100 text-green-700 px-4 py-2 rounded-full font-bold">
+                    Ahorra 43% - ¡Oferta limitada!
+                  </div>
+                </div>
+
+                {/* What's Included */}
+                <div className="mb-8">
+                  <h3 className="font-cormorant text-2xl font-bold text-slate-900 mb-6 text-center">
+                    Lo que incluye:
+                  </h3>
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-purple-600 text-sm">✓</span>
+                      </div>
+                      <p className="text-gray-700">
+                        <strong>eBook completo</strong> - Desmitificando conceptos erróneos sobre el TDAH
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-purple-600 text-sm">✓</span>
+                      </div>
+                      <p className="text-gray-700">
+                        <strong>Evidencia científica actualizada</strong> sobre tratamientos efectivos
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-purple-600 text-sm">✓</span>
+                      </div>
+                      <p className="text-gray-700">
+                        <strong>Guía práctica</strong> para tomar decisiones informadas
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-purple-600 text-sm">✓</span>
+                      </div>
+                      <p className="text-gray-700">
+                        <strong>BONUS: Pomodoro Timer interactivo</strong> - Herramienta de productividad activable
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-purple-600 text-sm">✓</span>
+                      </div>
+                      <p className="text-gray-700">
+                        <strong>Formato dinámico HTML</strong> - No un PDF estático, contenido interactivo
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* CTA Button */}
+                <Link
+                  href="https://www.instagram.com/gabyneuropedia/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-purple-600 text-white text-center px-8 py-5 rounded-xl font-bold text-lg hover:bg-purple-700 transition shadow-lg"
+                >
+                  Comprar Ahora
+                </Link>
+              </div>
+            </div>
+
+            {/* App Product */}
+            <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border-2 border-orange-500 hover:shadow-3xl transition-all duration-300 relative">
+              {/* Popular Badge */}
+              <div className="absolute top-6 right-6 z-20">
+                <div className="bg-orange-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
+                  MÁS POPULAR
+                </div>
+              </div>
+
+              {/* Product Image/Header */}
+              <div className="bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 p-12 text-white text-center relative overflow-hidden">
+                <div className="absolute inset-0 opacity-10">
+                  <Image
+                    src="/images/22-02-01-15-59-49-938_deco.jpg"
+                    alt=""
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative z-10">
+                  <div className="text-6xl mb-6">📱</div>
+                  <h2 className="font-cormorant text-4xl font-bold mb-4">
+                    Tu Rastreador TDAH a la Medida
+                  </h2>
+                  <p className="text-xl text-gray-300">
+                    Aplicación de seguimiento del tratamiento
+                  </p>
+                </div>
+              </div>
+
+              {/* Product Content */}
+              <div className="p-10">
+                {/* Pricing Options */}
+                <PricingSelector />
+
+                {/* Features */}
+                <div className="mb-8">
+                  <h3 className="font-cormorant text-2xl font-bold text-slate-900 mb-6 text-center">
+                    Características:
+                  </h3>
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-teal-600 text-sm">✓</span>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-slate-900">📝 Registro diario</p>
+                        <p className="text-sm text-gray-600">
+                          Tratamiento, dosis, hora, síntomas, apetito, sueño, ánimo y notas
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-teal-600 text-sm">✓</span>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-slate-900">📊 Historial y tendencias</p>
+                        <p className="text-sm text-gray-600">
+                          Visualiza progreso y cambios para conversar con tu especialista
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-teal-600 text-sm">✓</span>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-slate-900">🧠 Análisis inteligente</p>
+                        <p className="text-sm text-gray-600">
+                          Resumen clínico y señales de atención para orientar seguimiento
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-teal-600 text-sm">✓</span>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-slate-900">📤 Exporta datos</p>
+                        <p className="text-sm text-gray-600">
+                          Comparte PDF, CSV o respaldo JSON con tu equipo clínico
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-teal-600 text-sm">✓</span>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-slate-900">🔒 Privacidad garantizada</p>
+                        <p className="text-sm text-gray-600">
+                          Espacio privado, local-first y listo para compartir con tu equipo
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Note */}
+                <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-6 text-sm text-blue-900">
+                  <p className="font-semibold mb-1">💡 Nota importante:</p>
+                  <p>
+                    Esta app no sustituye consulta médica. Es un bitácora para facilitar el intercambio
+                    de observaciones con tu equipo clínico.
+                  </p>
+                </div>
+
+                {/* CTA Button */}
+                <Link
+                  href="https://www.instagram.com/gabyneuropedia/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white text-center px-8 py-5 rounded-xl font-bold text-lg hover:from-orange-600 hover:to-orange-700 transition shadow-lg"
+                >
+                  🚀 Acceso a la App
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-cormorant text-4xl font-bold text-slate-900 mb-12 text-center">
+            Preguntas Frecuentes
+          </h2>
+          <div className="space-y-6">
+            <div className="bg-white rounded-xl p-6 shadow-md">
+              <h3 className="font-bold text-lg text-slate-900 mb-2">
+                ¿Cómo accedo a los productos después de comprar?
+              </h3>
+              <p className="text-gray-600">
+                Recibirás un email inmediatamente con el enlace al eBook interactivo (formato HTML dinámico con Pomodoro Timer activable) y las instrucciones de acceso a la aplicación.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-md">
+              <h3 className="font-bold text-lg text-slate-900 mb-2">
+                ¿La aplicación funciona en iOS y Android?
+              </h3>
+              <p className="text-gray-600">
+                Sí, la aplicación es una Progressive Web App (PWA) que funciona en cualquier dispositivo
+                con navegador web moderno.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-md">
+              <h3 className="font-bold text-lg text-slate-900 mb-2">
+                ¿Hay garantía de reembolso?
+              </h3>
+              <p className="text-gray-600">
+                Sí, ofrecemos garantía de satisfacción de 7 días. Si no estás satisfecho, te devolvemos
+                tu dinero sin preguntas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Banner */}
+      <section className="py-16 px-4 bg-gradient-to-r from-teal-600 to-teal-700 text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="font-cormorant text-4xl font-bold mb-4">
+            ¿Tienes dudas sobre qué producto es mejor para ti?
+          </h2>
+          <p className="text-xl mb-8 text-teal-100">
+            Agenda una consulta gratuita de 15 minutos y te orientaré
+          </p>
+          <Link
+            href="https://www.instagram.com/gabyneuropedia/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-white text-teal-600 px-10 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-xl"
+          >
+            Agendar Consulta Gratuita
+          </Link>
+        </div>
+      </section>
+    </div>
+  )
+}
