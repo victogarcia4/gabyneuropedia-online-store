@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import PricingSelector from '@/components/infoproductos/PricingSelector'
+import ProductsInfiniteBanner from '@/components/shared/ProductsInfiniteBanner'
 
 export const metadata: Metadata = {
   title: 'Infoproductos - eBooks y Aplicaciones',
@@ -25,6 +26,9 @@ export default function InfoproductosPage() {
           </p>
         </div>
       </section>
+
+      {/* Products Infinite Banner */}
+      <ProductsInfiniteBanner />
 
       {/* Libro: El Autismo Puertas Adentro */}
       <section id="libro-autismo" className="py-16 px-4 bg-white scroll-mt-24">

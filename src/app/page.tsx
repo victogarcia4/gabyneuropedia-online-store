@@ -1,7 +1,6 @@
 import { services } from '@/data/services'
 import { testimonials } from '@/data/testimonials'
 import Image from 'next/image'
-import ProductsInfiniteBanner from '@/components/shared/ProductsInfiniteBanner'
 
 export default function HomePage() {
   return (
@@ -414,9 +413,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Products Infinite Banner */}
-      <ProductsInfiniteBanner />
 
       {/* Instagram Section */}
       <section className="bg-white py-20 px-4">
