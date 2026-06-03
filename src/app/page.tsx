@@ -438,57 +438,6 @@ export default function HomePage() {
           </a>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-slate-900 text-white py-16 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-12 mb-12">
-            <div>
-              <a
-                href="https://www.instagram.com/gabyneuropedia/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block hover:opacity-80 transition"
-              >
-                <h3 className="font-cormorant text-2xl font-bold mb-4">@gabyneuropedia</h3>
-              </a>
-              <p className="text-gray-400 leading-relaxed">
-                Consultoría y acompañamiento en salud neurológica con enfoque científico y humano.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-bold text-lg mb-4">Navegación</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="/" className="hover:text-teal-400 transition">Inicio</a></li>
-                <li><a href="/sobre-mi" className="hover:text-teal-400 transition">Sobre mí</a></li>
-                <li><a href="/servicios" className="hover:text-teal-400 transition">Servicios</a></li>
-                <li><a href="/contacto" className="hover:text-teal-400 transition">Contacto</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold text-lg mb-4">Conecta Conmigo</h4>
-              <div className="space-y-3">
-                <a
-                  href={process.env.NEXT_PUBLIC_INSTAGRAM_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-gray-400 hover:text-teal-400 transition"
-                >
-                  <span>📷</span> Instagram @gabyneuropedia
-                </a>
-                <a
-                  href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
-                  className="flex items-center gap-2 text-gray-400 hover:text-teal-400 transition"
-                >
-                  <span>✉️</span> {process.env.NEXT_PUBLIC_EMAIL}
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }
