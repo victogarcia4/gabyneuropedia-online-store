@@ -12,27 +12,27 @@ export default function MetodoClaroPage() {
     {
       letter: 'C',
       title: 'Comprender',
-      description: 'Entendemos juntos el diagnóstico, síntomas y contexto familiar. Sin prisas, con claridad científica.',
+      description: 'Qué es TDAH, qué no es y por qué no se debe reducirse a simple inquietud.',
     },
     {
       letter: 'L',
-      title: 'Línea de Base',
-      description: 'Establecemos el punto de partida con evaluaciones integrales y objetivos medibles.',
+      title: 'Localizar',
+      description: 'Identificar el impacto funcional en casa, escuela, emociones, conducta y relaciones.',
     },
     {
       letter: 'A',
-      title: 'Acompañar',
-      description: 'Seguimiento continuo y personalizado adaptado a la evolución de cada familia.',
+      title: 'Analizar',
+      description: 'Revisar sueño, pantallas, ansiedad, trauma, duelo y otros factores confundidores.',
     },
     {
       letter: 'R',
-      title: 'Reforzar',
-      description: 'Potenciamos fortalezas, ajustamos estrategias y celebramos cada logro del camino.',
+      title: 'Reconocer',
+      description: 'Diferenciar cuándo no medicas inicialmente y cuándo sí considerar tratamiento.',
     },
     {
       letter: 'O',
-      title: 'Optimizar',
-      description: 'Refinamos el abordaje con evidencia actualizada para resultados sostenibles a largo plazo.',
+      title: 'Organizar',
+      description: 'Crear un plan familiar y escolar para llegar mejor preparados a consulta.',
     },
   ]
 
@@ -94,6 +94,29 @@ export default function MetodoClaroPage() {
             No es solo un protocolo médico: es un camino de transformación donde las familias pasan del miedo
             a la claridad, y de la incertidumbre al empoderamiento.
           </p>
+        </div>
+      </section>
+
+      {/* eBook Image Section */}
+      <section className="py-12 px-4 bg-gradient-to-b from-white to-slate-50">
+        <div className="max-w-3xl mx-auto">
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-[1.02]">
+            <Image
+              src="/foto eBook tx tdah.png"
+              alt="eBook Mitos y Realidades del Tratamiento de TDAH"
+              width={800}
+              height={600}
+              className="w-full h-auto"
+            />
+          </div>
+          <div className="text-center mt-8">
+            <Link
+              href="/servicios/infoproductos"
+              className="inline-block bg-purple-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-purple-700 transition shadow-lg hover:scale-105 duration-300"
+            >
+              Conoce más sobre el eBook
+            </Link>
+          </div>
         </div>
       </section>
 
