@@ -88,7 +88,7 @@ export default function Footer() {
 
               {/* Facebook */}
               <Link
-                href="https://www.facebook.com/gabyneuropedia"
+                href="https://www.facebook.com/people/Gabyneuropedia/100068915743299/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-gray-400 hover:text-blue-400 transition"
