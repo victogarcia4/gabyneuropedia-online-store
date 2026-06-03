@@ -311,16 +311,7 @@ export default function HomePage() {
                 </p>
                 <p>
                   Autora de <em>"El Autismo Puertas Adentro"</em> y <em>"Manual de Urgencias Pediátricas"</em>.
-                  Con más de 14K seguidores en Instagram como{' '}
-                  <a
-                    href="https://www.instagram.com/gabyneuropedia/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-teal-600 hover:text-teal-700 font-bold transition"
-                  >
-                    @gabyneuropedia
-                  </a>
-                  , divulgo neurología con ciencia, corazón y lenguaje accesible para todas las familias.
+                  Divulgo neurología con ciencia, corazón y lenguaje accesible para todas las familias.
                 </p>
                 <p>
                   Mi enfoque combina la rigurosidad científica con una profunda empatía humana, ofreciendo

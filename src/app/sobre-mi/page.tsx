@@ -53,16 +53,7 @@ export default function SobreMiPage() {
                 Soy la <strong>Dra. María Gabriela Jiménez Méndez</strong>, Neuróloga Pediátrica Venezolana y <strong>MSN Family Nurse Practitioner</strong> con formación internacional en USA, y España. Investigadora clínica, escritora y conferencista comprometida con el bienestar neurológico infantil y familiar.
               </p>
               <p className="text-base text-gray-700 leading-relaxed mb-8">
-                Autora de <em>"El Autismo Puertas Adentro"</em> y <em>"Manual de Urgencias Pediátricas"</em>. Con más de 14K seguidores en Instagram como{' '}
-                <Link
-                  href="https://www.instagram.com/gabyneuropedia/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-teal-600 font-bold hover:text-teal-700 transition"
-                >
-                  @gabyneuropedia
-                </Link>
-                , divulgo neurología con ciencia, corazón y lenguaje accesible para todas las familias.
+                Autora de <em>"El Autismo Puertas Adentro"</em> y <em>"Manual de Urgencias Pediátricas"</em>. Divulgo neurología con ciencia, corazón y lenguaje accesible para todas las familias.
               </p>
 
               {/* CTA */}
