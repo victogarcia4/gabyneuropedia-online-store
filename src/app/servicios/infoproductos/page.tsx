@@ -32,25 +32,15 @@ export default function InfoproductosPage() {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* eBook Product */}
             <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200 hover:shadow-3xl transition-all duration-300">
-              {/* Product Image/Header */}
-              <div className="bg-gradient-to-br from-purple-600 to-purple-800 p-12 text-white text-center relative overflow-hidden">
-                <div className="absolute inset-0 opacity-20">
-                  <Image
-                    src="/images/22-02-07-22-59-09-880_deco.jpg"
-                    alt=""
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="relative z-10">
-                  <div className="text-6xl mb-6">📚</div>
-                  <h2 className="font-cormorant text-4xl font-bold mb-4">
-                    eBook + Pomodoro Timer
-                  </h2>
-                  <p className="text-xl text-purple-100">
-                    Mitos y Realidades del Tratamiento de TDAH
-                  </p>
-                </div>
+              {/* Product Image */}
+              <div className="relative w-full">
+                <Image
+                  src="/foto eBook tx tdah.png"
+                  alt="eBook Mitos y Realidades del Tratamiento de TDAH"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto object-cover"
+                />
               </div>
 
               {/* Product Content */}

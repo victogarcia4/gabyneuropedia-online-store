@@ -234,7 +234,7 @@ export default function MetodoClaroPage() {
             la experiencia de tu familia con las condiciones neurológicas.
           </p>
           <Link
-            href="/contacto"
+            href="/servicios/asesorias"
             className="inline-block bg-white text-teal-600 px-12 py-5 rounded-xl font-bold text-xl hover:bg-gray-100 transition shadow-2xl hover:scale-105 duration-300"
           >
             Agendar Consultoría

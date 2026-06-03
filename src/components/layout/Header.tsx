@@ -121,7 +121,7 @@ export default function Header() {
             </Link>
 
             <Link
-              href="/contacto"
+              href="/servicios/asesorias"
               className="text-gray-700 hover:text-teal-600 font-semibold transition"
             >
               Contacto
@@ -131,7 +131,7 @@ export default function Header() {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <Link
-              href="/contacto"
+              href="/servicios/asesorias"
               className="bg-teal-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-teal-600 transition shadow-lg"
             >
               Agendar Consultoría
@@ -236,7 +236,7 @@ export default function Header() {
               </Link>
 
               <Link
-                href="/contacto"
+                href="/servicios/asesorias"
                 className="text-gray-700 hover:text-teal-600 font-semibold py-2 transition"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -244,7 +244,7 @@ export default function Header() {
               </Link>
 
               <Link
-                href="/contacto"
+                href="/servicios/asesorias"
                 className="bg-teal-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-teal-600 transition text-center mt-4"
                 onClick={() => setIsMobileMenuOpen(false)}
               >

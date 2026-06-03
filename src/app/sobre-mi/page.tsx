@@ -67,7 +67,7 @@ export default function SobreMiPage() {
 
               {/* CTA */}
               <Link
-                href="/contacto"
+                href="/servicios/asesorias"
                 className="inline-block bg-teal-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-teal-600 transition shadow-lg"
               >
                 Agendar Consultoría
@@ -167,7 +167,7 @@ export default function SobreMiPage() {
             Agenda tu primera consultoría y descubre cómo puedo acompañarte
           </p>
           <Link
-            href="/contacto"
+            href="/servicios/asesorias"
             className="inline-block bg-white text-teal-600 px-10 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-xl"
           >
             Agendar Consultoría

@@ -406,7 +406,7 @@ export default function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="/contacto"
+              href="/servicios/asesorias"
               className="bg-teal-500 text-white px-10 py-5 rounded-lg font-bold hover:bg-teal-600 transition text-lg shadow-2xl"
             >
               Agendar Consultoría Ahora
@@ -495,21 +495,6 @@ export default function HomePage() {
                 </a>
               </div>
             </div>
-          </div>
-
-          <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
-            <p>
-              © 2025 Dra. María Gabriela Jiménez Méndez ·{' '}
-              <a
-                href="https://www.instagram.com/gabyneuropedia/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-teal-400 hover:text-teal-300 transition"
-              >
-                @gabyneuropedia
-              </a>
-              {' '}· Todos los derechos reservados.
-            </p>
           </div>
         </div>
       </footer>
