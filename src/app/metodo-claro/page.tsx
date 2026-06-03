@@ -12,27 +12,27 @@ export default function MetodoClaroPage() {
     {
       letter: 'C',
       title: 'Comprender',
-      description: 'Qué es TDAH, qué no es y por qué no se debe reducirse a simple inquietud.',
+      description: 'Qué es la condición neurológica, qué no es y por qué no se debe reducir a un simple síntoma o etiqueta.',
     },
     {
       letter: 'L',
       title: 'Localizar',
-      description: 'Identificar el impacto funcional en casa, escuela, emociones, conducta y relaciones.',
+      description: 'Identificar el impacto funcional en casa, escuela, trabajo, emociones, conducta y relaciones.',
     },
     {
       letter: 'A',
       title: 'Analizar',
-      description: 'Revisar sueño, pantallas, ansiedad, trauma, duelo y otros factores confundidores.',
+      description: 'Revisar sueño, alimentación, pantallas, ansiedad, trauma, duelo y otros factores confundidores.',
     },
     {
       letter: 'R',
       title: 'Reconocer',
-      description: 'Diferenciar cuándo no medicas inicialmente y cuándo sí considerar tratamiento.',
+      description: 'Diferenciar cuándo intervenir de forma no farmacológica y cuándo considerar tratamiento médico.',
     },
     {
       letter: 'O',
       title: 'Organizar',
-      description: 'Crear un plan familiar y escolar para llegar mejor preparados a consulta.',
+      description: 'Crear un plan integral familiar, escolar o laboral para llegar mejor preparados a consulta.',
     },
   ]
 
