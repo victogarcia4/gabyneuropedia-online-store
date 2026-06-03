@@ -20,7 +20,7 @@ export default function Footer() {
               </Link>
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
-              Consultora en Salud Neurológica. Médica Neurointensivista Venezolana y MSN Family Nurse Practitioner.
+              Consultora en Salud Neurológica. Neuróloga Pediátrica Venezolana y MSN Family Nurse Practitioner.
             </p>
             <p className="text-gray-400 text-sm">
               Cobertura: LATAM, USA y España

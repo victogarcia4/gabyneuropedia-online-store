@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Sobre Mí - Dra. María Gabriela Jiménez',
-  description: 'Médica Neurointensivista Venezolana y MSN Family Nurse Practitioner con formación internacional en USA y España. Especialista en condiciones neurológicas.',
+  description: 'Neuróloga Pediátrica Venezolana y MSN Family Nurse Practitioner con formación internacional en USA y España. Especialista en condiciones neurológicas.',
 }
 
 export default function SobreMiPage() {
@@ -50,7 +50,7 @@ export default function SobreMiPage() {
                 La doctora que<br />escucha antes de recetar.
               </h1>
               <p className="text-base text-gray-700 leading-relaxed mb-4">
-                Soy la <strong>Dra. María Gabriela Jiménez Méndez</strong>, Médica Neurointensivista Venezolana y <strong>MSN Family Nurse Practitioner</strong> con formación internacional en USA, y España. Investigadora clínica, escritora y conferencista comprometida con el bienestar neurológico infantil y familiar.
+                Soy la <strong>Dra. María Gabriela Jiménez Méndez</strong>, Neuróloga Pediátrica Venezolana y <strong>MSN Family Nurse Practitioner</strong> con formación internacional en USA, y España. Investigadora clínica, escritora y conferencista comprometida con el bienestar neurológico infantil y familiar.
               </p>
               <p className="text-base text-gray-700 leading-relaxed mb-8">
                 Autora de <em>"El Autismo Puertas Adentro"</em> y <em>"Manual de Urgencias Pediátricas"</em>. Con más de 14K seguidores en Instagram como{' '}

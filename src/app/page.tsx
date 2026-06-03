@@ -42,7 +42,7 @@ export default function HomePage() {
             </div>
 
             <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl mx-auto">
-              Soy Médica Neurointensivista y MSN Family Nurse Practitioner con formación de especialización realizada en el prestigioso
+              Soy Neuróloga Pediátrica y MSN Family Nurse Practitioner con formación de especialización realizada en el prestigioso
               Hospital Clínic de Barcelona y Valencia, España. Me especializo en el acompañamiento
               diagnóstico y terapéutico de familias en el ámbito de la neurología.
             </p>
@@ -305,7 +305,7 @@ export default function HomePage() {
               <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
                 <p>
                   Soy la <strong className="text-slate-900">Dra. María Gabriela Jiménez Méndez</strong>,
-                  Médica Neurointensivista y MSN Family Nurse Practitioner venezolana con formación internacional en Madrid y Barcelona.
+                  Neuróloga Pediátrica y MSN Family Nurse Practitioner venezolana con formación internacional en Madrid y Barcelona.
                   Investigadora clínica, escritora y conferencista comprometida con el bienestar neurológico
                   de familias en todo el mundo.
                 </p>
