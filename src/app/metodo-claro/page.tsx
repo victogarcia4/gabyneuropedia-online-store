@@ -97,29 +97,6 @@ export default function MetodoClaroPage() {
         </div>
       </section>
 
-      {/* eBook Image Section */}
-      <section className="py-12 px-4 bg-gradient-to-b from-white to-slate-50">
-        <div className="max-w-3xl mx-auto">
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-[1.02]">
-            <Image
-              src="/foto eBook tx tdah.png"
-              alt="eBook Mitos y Realidades del Tratamiento de TDAH"
-              width={800}
-              height={600}
-              className="w-full h-auto"
-            />
-          </div>
-          <div className="text-center mt-8">
-            <Link
-              href="/servicios/infoproductos"
-              className="inline-block bg-purple-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-purple-700 transition shadow-lg hover:scale-105 duration-300"
-            >
-              Conoce más sobre el eBook
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* 5 Steps - CLARO */}
       <section className="py-20 px-4 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-6xl mx-auto">
