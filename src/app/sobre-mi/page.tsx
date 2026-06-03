@@ -135,7 +135,10 @@ export default function SobreMiPage() {
             Publicaciones
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300">
+            <Link
+              href="/servicios/infoproductos#libro-autismo"
+              className="bg-white rounded-2xl p-8 shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
+            >
               <div className="text-6xl mb-6 text-center">📚</div>
               <h3 className="font-cormorant text-2xl font-bold text-slate-900 mb-3 text-center">
                 El Autismo Puertas Adentro
@@ -143,7 +146,10 @@ export default function SobreMiPage() {
               <p className="text-gray-600 text-center">
                 Una guía honesta y científica para familias que navegan el espectro autista.
               </p>
-            </div>
+              <p className="text-teal-600 text-center mt-4 font-semibold">
+                Ver libro →
+              </p>
+            </Link>
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-200 hover:shadow-2xl transition-all duration-300">
               <div className="text-6xl mb-6 text-center">🏥</div>
               <h3 className="font-cormorant text-2xl font-bold text-slate-900 mb-3 text-center">

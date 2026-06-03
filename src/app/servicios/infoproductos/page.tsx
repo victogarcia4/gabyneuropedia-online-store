@@ -26,6 +26,58 @@ export default function InfoproductosPage() {
         </div>
       </section>
 
+      {/* Libro: El Autismo Puertas Adentro */}
+      <section id="libro-autismo" className="py-16 px-4 bg-white scroll-mt-24">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-br from-slate-50 to-white rounded-3xl shadow-2xl overflow-hidden border-2 border-teal-500">
+            <div className="grid md:grid-cols-2 gap-8 p-8 md:p-12">
+              {/* Image */}
+              <div className="flex items-center justify-center">
+                <div className="relative w-full max-w-sm">
+                  <Image
+                    src="/El autismo puertas adentro.png"
+                    alt="El Autismo Puertas Adentro - Libro"
+                    width={400}
+                    height={600}
+                    className="w-full h-auto rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="flex flex-col justify-center">
+                <div className="text-5xl mb-4">📚</div>
+                <h2 className="font-cormorant text-4xl font-bold text-slate-900 mb-4">
+                  El Autismo Puertas Adentro
+                </h2>
+                <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                  Una guía honesta y científica para familias que navegan el espectro autista.
+                </p>
+                <p className="text-gray-600 mb-8 leading-relaxed">
+                  Escrito con corazón y evidencia por la Dra. María Gabriela Jiménez, este libro
+                  es un acompañamiento real para entender, aceptar y empoderar a las familias
+                  que viven el autismo desde adentro.
+                </p>
+
+                {/* CTA Button */}
+                <Link
+                  href="https://a.co/d/0fAb2lrD"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-gradient-to-r from-teal-500 to-teal-600 text-white px-10 py-5 rounded-xl font-bold text-lg hover:from-teal-600 hover:to-teal-700 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 text-center"
+                >
+                  📖 Quiero el Libro
+                </Link>
+
+                <p className="text-sm text-gray-500 mt-4 text-center">
+                  Disponible en Amazon
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Products Grid */}
       <section className="py-12 px-4">
         <div className="max-w-7xl mx-auto">
