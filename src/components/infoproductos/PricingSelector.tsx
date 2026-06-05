@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import CheckoutButton from './CheckoutButton'
+import Link from 'next/link'
 
 type PlanType = 'monthly' | 'yearly'
 
@@ -58,13 +58,13 @@ export default function PricingSelector() {
         </div>
       </div>
 
-      {/* Interactive Checkout Button */}
-      <CheckoutButton
-        buyTarget={selectedPlan === 'monthly' ? 'app_monthly' : 'app_yearly'}
+      {/* Direct Link to Checkout */}
+      <Link
+        href={`/api/checkout?buy=${selectedPlan === 'monthly' ? 'app_monthly' : 'app_yearly'}`}
         className="block w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white text-center px-6 py-4 rounded-xl font-bold text-base hover:from-orange-600 hover:to-orange-700 transition shadow-lg hover:shadow-orange-500/20"
       >
         🚀 Obtener Acceso a la App
-      </CheckoutButton>
+      </Link>
     </div>
   )
 }

@@ -29,7 +29,7 @@ export async function POST(request: Request) {
     const session = event.data.object as Stripe.Checkout.Session
     const metadata = session.metadata || {}
     const buyTarget = metadata.buyTarget as 'ebook' | 'app_monthly' | 'app_yearly'
-    const email = metadata.email
+    const email = session.customer_details?.email
 
     if (email && buyTarget) {
       console.log(`Processing purchase of ${buyTarget} for user: ${email}`)

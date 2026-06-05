@@ -157,12 +157,12 @@ export default function InfoproductosPage() {
                 </div>
 
                 {/* CTA Button */}
-                <CheckoutButton
-                  buyTarget="ebook"
+                <Link
+                  href="/api/checkout?buy=ebook"
                   className="block w-full bg-purple-600 text-white text-center px-6 py-4 rounded-xl font-bold text-base hover:bg-purple-700 transition shadow-lg hover:shadow-purple-500/20"
                 >
                   Comprar Ahora
-                </CheckoutButton>
+                </Link>
               </div>
             </div>
 
