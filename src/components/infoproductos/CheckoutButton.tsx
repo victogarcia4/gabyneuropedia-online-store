@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { supabaseBrowser } from '@/lib/supabase'
+import { getSupabaseBrowserClient } from '@/lib/supabase'
 import { useRouter } from 'next/navigation'
 
 interface CheckoutButtonProps {
@@ -18,7 +18,7 @@ export default function CheckoutButton({ buyTarget, className, children }: Check
     setLoading(true)
     try {
       // 1. Check if user is logged in
-      const { data: { user } } = await supabaseBrowser.auth.getUser()
+      const { data: { user } } = await getSupabaseBrowserClient().auth.getUser()
 
       if (!user) {
         // If not logged in, redirect to register page with purchase intention

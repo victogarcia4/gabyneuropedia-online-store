@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, Suspense } from 'react'
-import { supabaseBrowser } from '@/lib/supabase'
+import { getSupabaseBrowserClient } from '@/lib/supabase'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
 
@@ -25,7 +25,7 @@ function RegisterForm() {
         buyTarget ? `?buy=${buyTarget}` : ''
       }`
 
-      const { error } = await supabaseBrowser.auth.signUp({
+      const { error } = await getSupabaseBrowserClient().auth.signUp({
         email,
         password,
         options: {

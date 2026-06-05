@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, Suspense } from 'react'
-import { supabaseBrowser } from '@/lib/supabase'
+import { getSupabaseBrowserClient } from '@/lib/supabase'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
 
@@ -21,7 +21,7 @@ function LoginForm() {
     setMessage(null)
 
     try {
-      const { error } = await supabaseBrowser.auth.signInWithPassword({
+      const { error } = await getSupabaseBrowserClient().auth.signInWithPassword({
         email,
         password,
       })
