@@ -15,7 +15,7 @@ const products = [
     link: '/servicios/infoproductos',
   },
   {
-    name: 'Tu Rastreador TDAH a la Medida',
+    name: "Tu rastreador TDAH, es tu 'TRAJE A LA MEDIDA'",
     image: '/traje a la medida tx tdah app.png',
     link: '/servicios/infoproductos',
   },
