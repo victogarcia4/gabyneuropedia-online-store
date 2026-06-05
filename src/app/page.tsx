@@ -22,7 +22,7 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <div>
               <p className="text-sm font-bold tracking-[0.2em] text-teal-300 mb-4 uppercase">
-                La Experta Detrás del Método
+                Neuropediatría científica, profundamente humana
               </p>
               <h1 className="font-cormorant text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
                 Dra. María Gabriela Jiménez Méndez
@@ -42,9 +42,9 @@ export default function HomePage() {
             </div>
 
             <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl mx-auto">
-              Soy Neuróloga Pediátrica y MSN Family Nurse Practitioner con formación de especialización realizada en el prestigioso
-              Hospital Clínic de Barcelona y Valencia, España. Me especializo en el acompañamiento
-              diagnóstico y terapéutico de familias en el ámbito de la neurología.
+              Soy Neuróloga Pediátrica, investigadora clínica, escritora y Family Nurse Practitioner en Houston.
+              Acompaño a familias que buscan respuestas claras en autismo, TDAH, epilepsia, migraña,
+              trastornos del movimiento y enfermedades raras, con rigor científico y lenguaje humano.
             </p>
 
             <div className="pt-4">
@@ -56,6 +56,24 @@ export default function HomePage() {
               </a>
             </div>
           </div>
+        </div>
+
+        {/* Scroll Down Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
+          <a href="#la-experta" className="flex flex-col items-center gap-2 opacity-60 hover:opacity-100 transition-opacity">
+            <span className="text-white text-xs font-medium tracking-wider uppercase">Scroll</span>
+            <svg
+              className="w-6 h-6 text-white"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+          </a>
         </div>
       </section>
 
@@ -70,7 +88,7 @@ export default function HomePage() {
               La experta detrás del método
             </h2>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-              Formación de élite y compromiso con la excelencia científica al servicio de las familias
+              Una trayectoria construida entre Sudamérica, Europa y Norteamérica al servicio de las familias
             </p>
           </div>
 
@@ -80,10 +98,10 @@ export default function HomePage() {
                 <span className="text-3xl group-hover:scale-110 transition-transform">🎓</span>
               </div>
               <h3 className="font-cormorant text-xl font-bold text-slate-900 mb-3">
-                Especialidad de Elite
+                Trayectoria Tricontinental
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Neurointensivismo - Hospital Clínic de Barcelona y Valencia, España
+                Formación y práctica entre Venezuela, España y Estados Unidos, con mirada clínica cosmopolita
               </p>
             </div>
 
@@ -95,7 +113,7 @@ export default function HomePage() {
                 Escritora y Conferencista
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Autora de libros especializados y conferencista internacional
+                Autora de "El Autismo Puertas Adentro" y del "Manual de Urgencias Pediátricas"
               </p>
             </div>
 
@@ -127,7 +145,7 @@ export default function HomePage() {
                 Enfoque Humano Primero
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Acompañamiento personalizado con calidez y rigor científico
+                Acompañamiento familiar real: no solo diagnóstico, también claridad, contexto y plan
               </p>
             </div>
           </div>
@@ -145,7 +163,7 @@ export default function HomePage() {
               Método C.L.A.R.O. para familias
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              enfrentando <strong className="text-slate-900">cualquier condición neurológica</strong>
+              del diagnóstico que aterra al <strong className="text-slate-900">diagnóstico que ilumina</strong>
             </p>
           </div>
 
@@ -238,9 +256,15 @@ export default function HomePage() {
               Consultoría y Acompañamiento<br className="hidden md:block" />en Salud Neurológica
             </h2>
             <p className="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-              Apoyo integral para familias enfrentando condiciones neurológicas. Desde el diagnóstico hasta
-              el tratamiento, con un enfoque científico y humano.
+              Apoyo para familias que transitan autismo, TDAH, epilepsia, migraña, trastornos del movimiento
+              y enfermedades raras. Del diagnóstico a un plan a la medida, con ciencia y acompañamiento humano.
             </p>
+            <blockquote className="mt-6 max-w-3xl mx-auto font-cormorant text-2xl md:text-3xl italic text-slate-800">
+              "Del diagnóstico que aterra, al diagnóstico que ilumina."
+              <cite className="block mt-3 font-sans text-sm not-italic font-bold tracking-[0.16em] uppercase text-teal-600">
+                Dra. María Gabriela Jiménez Méndez
+              </cite>
+            </blockquote>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -298,25 +322,24 @@ export default function HomePage() {
                   Sobre Mí
                 </span>
                 <h2 className="font-cormorant text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
-                  La consultora que escucha antes de orientar
+                  La doctora que escucha antes de orientar
                 </h2>
               </div>
 
               <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
                 <p>
                   Soy la <strong className="text-slate-900">Dra. María Gabriela Jiménez Méndez</strong>,
-                  Neuróloga Pediátrica y MSN Family Nurse Practitioner venezolana con formación internacional en Madrid y Barcelona.
-                  Investigadora clínica, escritora y conferencista comprometida con el bienestar neurológico
-                  de familias en todo el mundo.
+                  Neuróloga Pediátrica venezolana y Family Nurse Practitioner en Houston, con formación y experiencia
+                  en Sudamérica, Europa y Norteamérica. Investigadora clínica, escritora y conferencista comprometida
+                  con familias que necesitan respuestas cuando el camino diagnóstico ha sido difícil.
                 </p>
                 <p>
                   Autora de <em>"El Autismo Puertas Adentro"</em> y <em>"Manual de Urgencias Pediátricas"</em>.
-                  Divulgo neurología con ciencia, corazón y lenguaje accesible para todas las familias.
+                  Divulgo neurología con ciencia, corazón y lenguaje accesible para familias, docentes y profesionales.
                 </p>
                 <p>
-                  Mi enfoque combina la rigurosidad científica con una profunda empatía humana, ofreciendo
-                  acompañamiento personalizado en el diagnóstico y tratamiento de todas las condiciones
-                  neurológicas.
+                  Mi enfoque combina rigurosidad científica, empatía clínica y defensa de los niños neurodivergentes,
+                  con especial atención a neurodiversidad, TEA, TDAH, epilepsia, migraña y enfermedades raras.
                 </p>
               </div>
 
@@ -352,7 +375,7 @@ export default function HomePage() {
               Testimonios
             </span>
             <h2 className="font-cormorant text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              Lo que dicen las familias<br className="hidden md:block" />que acompaño
+              La voz de las familias<br className="hidden md:block" />que ya abrieron las puertas
             </h2>
           </div>
 
@@ -393,7 +416,7 @@ export default function HomePage() {
             ¿Lista para iniciar tu proceso?
           </h2>
           <p className="text-xl md:text-2xl mb-10 text-gray-200">
-            Agenda tu consultoría online desde cualquier lugar de LATAM, USA o España
+            Agenda tu consultoría online desde cualquier lugar de LATAM, USA o España y demos forma a un plan claro
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -424,7 +447,7 @@ export default function HomePage() {
             Sígueme en Instagram
           </h2>
           <p className="text-gray-600 text-lg mb-8">
-            Contenido educativo diario sobre neurología con lenguaje claro y científico
+            Contenido educativo sobre autismo, TDAH, neurodesarrollo, enfermedades raras y neurodiversidad con lenguaje claro
           </p>
           <a
             href={process.env.NEXT_PUBLIC_INSTAGRAM_URL}

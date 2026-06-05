@@ -6,7 +6,7 @@ import ProductsInfiniteBanner from '@/components/shared/ProductsInfiniteBanner'
 
 export const metadata: Metadata = {
   title: 'Infoproductos - eBooks y Aplicaciones',
-  description: 'Herramientas digitales para el manejo de condiciones neurológicas: eBooks educativos y aplicaciones de seguimiento.',
+  description: 'Herramientas digitales para familias: El Autismo Puertas Adentro, recursos de TDAH y aplicaciones de seguimiento para compartir con el equipo clínico.',
 }
 
 export default function InfoproductosPage() {
@@ -22,7 +22,7 @@ export default function InfoproductosPage() {
             eBooks y Aplicaciones
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Herramientas digitales diseñadas para empoderar a las familias en el manejo de condiciones neurológicas
+            Herramientas digitales para transformar dudas en claridad: autismo puertas adentro, TDAH sin filtros y seguimiento a la medida
           </p>
         </div>
       </section>
@@ -30,37 +30,41 @@ export default function InfoproductosPage() {
       {/* Products Infinite Banner */}
       <ProductsInfiniteBanner />
 
-      {/* Libro: El Autismo Puertas Adentro */}
-      <section id="libro-autismo" className="py-16 px-4 bg-white scroll-mt-24">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-slate-50 to-white rounded-3xl shadow-2xl overflow-hidden border-2 border-teal-500">
-            <div className="grid md:grid-cols-2 gap-8 p-8 md:p-12">
-              {/* Image */}
-              <div className="flex items-center justify-center">
-                <div className="relative w-full max-w-sm">
-                  <Image
-                    src="/El autismo puertas adentro.png"
-                    alt="El Autismo Puertas Adentro - Libro"
-                    width={400}
-                    height={600}
-                    className="w-full h-auto rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
+      {/* Products Grid */}
+      <section className="py-12 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {/* Book Product - El Autismo Puertas Adentro */}
+            <div id="libro-autismo" className="scroll-mt-24 bg-white rounded-3xl shadow-2xl overflow-hidden border-2 border-teal-500 hover:shadow-3xl transition-all duration-300">
+              {/* Product Image */}
+              <div className="relative w-full h-64 lg:h-80 bg-gradient-to-br from-teal-50 to-white flex items-center justify-center p-6">
+                <Image
+                  src="/El autismo puertas adentro.png"
+                  alt="El Autismo Puertas Adentro - Libro"
+                  width={300}
+                  height={400}
+                  className="w-auto h-full max-h-full object-contain hover:scale-105 transition-transform duration-300"
+                />
               </div>
 
-              {/* Content */}
-              <div className="flex flex-col justify-center">
-                <div className="text-5xl mb-4">📚</div>
-                <h2 className="font-cormorant text-4xl font-bold text-slate-900 mb-4">
+              {/* Product Content */}
+              <div className="p-6 lg:p-8">
+                {/* Icon */}
+                <div className="text-4xl mb-3">📚</div>
+
+                {/* Title */}
+                <h2 className="font-cormorant text-2xl lg:text-3xl font-bold text-slate-900 mb-3">
                   El Autismo Puertas Adentro
                 </h2>
-                <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                  Una guía honesta y científica para familias que navegan el espectro autista.
+
+                {/* Description */}
+                <p className="text-base text-gray-700 mb-4 leading-relaxed">
+                  Una invitación a abrir las puertas del TEA con ciencia, historias reales y mirada profundamente humana.
                 </p>
-                <p className="text-gray-600 mb-8 leading-relaxed">
-                  Escrito con corazón y evidencia por la Dra. María Gabriela Jiménez, este libro
-                  es un acompañamiento real para entender, aceptar y empoderar a las familias
-                  que viven el autismo desde adentro.
+
+                {/* Extended description */}
+                <p className="text-sm text-gray-600 mb-6 leading-relaxed">
+                  Publicado por Universo de Letras. Reúne familia, escuela, terapeutas y mirada médica para acompañar el tránsito por este camino.
                 </p>
 
                 {/* CTA Button */}
@@ -68,26 +72,19 @@ export default function InfoproductosPage() {
                   href="https://a.co/d/0fAb2lrD"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-gradient-to-r from-teal-500 to-teal-600 text-white px-10 py-5 rounded-xl font-bold text-lg hover:from-teal-600 hover:to-teal-700 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 text-center"
+                  className="block w-full bg-gradient-to-r from-teal-500 to-teal-600 text-white text-center px-6 py-4 rounded-xl font-bold text-base hover:from-teal-600 hover:to-teal-700 transition-all duration-300 shadow-lg hover:shadow-2xl"
                 >
                   📖 Quiero el Libro
                 </Link>
 
-                <p className="text-sm text-gray-500 mt-4 text-center">
+                <p className="text-xs text-gray-500 mt-3 text-center">
                   Disponible en Amazon
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Products Grid */}
-      <section className="py-12 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12">
             {/* eBook Product */}
-            <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200 hover:shadow-3xl transition-all duration-300">
+            <div id="ebook" className="scroll-mt-24 bg-white rounded-3xl shadow-2xl overflow-hidden border-2 border-purple-200 hover:shadow-3xl transition-all duration-300">
               {/* Product Image */}
               <div className="relative w-full">
                 <Image
@@ -100,12 +97,12 @@ export default function InfoproductosPage() {
               </div>
 
               {/* Product Content */}
-              <div className="p-10">
+              <div className="p-6 lg:p-8">
                 {/* Pricing */}
-                <div className="mb-8 text-center">
-                  <div className="flex items-baseline justify-center gap-3 mb-3">
-                    <span className="text-5xl font-bold text-slate-900">$27</span>
-                    <span className="text-2xl text-gray-400 line-through">$47</span>
+                <div className="mb-6 text-center">
+                  <div className="flex items-baseline justify-center gap-2 mb-2">
+                    <span className="text-3xl lg:text-4xl font-bold text-slate-900">$27</span>
+                    <span className="text-lg lg:text-xl text-gray-400 line-through">$47</span>
                   </div>
                   <div className="inline-block bg-green-100 text-green-700 px-4 py-2 rounded-full font-bold">
                     Ahorra 43% - ¡Oferta limitada!
@@ -114,23 +111,23 @@ export default function InfoproductosPage() {
 
                 {/* What's Included */}
                 <div className="mb-8">
-                  <h3 className="font-cormorant text-2xl font-bold text-slate-900 mb-6 text-center">
+                  <h3 className="font-cormorant text-xl font-bold text-slate-900 mb-4 text-center">
                     Lo que incluye:
                   </h3>
-                  <div className="space-y-4">
+                  <div className="space-y-3">
                     <div className="flex items-start gap-3">
                       <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <span className="text-purple-600 text-sm">✓</span>
                       </div>
-                      <p className="text-gray-700">
-                        <strong>eBook completo</strong> - Desmitificando conceptos erróneos sobre el TDAH
+                      <p className="text-sm text-gray-700">
+                        <strong>eBook completo</strong> - TDAH sin filtros: mitos, realidades e impacto funcional
                       </p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <span className="text-purple-600 text-sm">✓</span>
                       </div>
-                      <p className="text-gray-700">
+                      <p className="text-sm text-gray-700">
                         <strong>Evidencia científica actualizada</strong> sobre tratamientos efectivos
                       </p>
                     </div>
@@ -138,15 +135,15 @@ export default function InfoproductosPage() {
                       <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <span className="text-purple-600 text-sm">✓</span>
                       </div>
-                      <p className="text-gray-700">
-                        <strong>Guía práctica</strong> para tomar decisiones informadas
+                      <p className="text-sm text-gray-700">
+                        <strong>Guía práctica</strong> para que padres y familias participen como aliados activos del tratamiento
                       </p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <span className="text-purple-600 text-sm">✓</span>
                       </div>
-                      <p className="text-gray-700">
+                      <p className="text-sm text-gray-700">
                         <strong>BONUS: Pomodoro Timer interactivo</strong> - Herramienta de productividad activable
                       </p>
                     </div>
@@ -154,7 +151,7 @@ export default function InfoproductosPage() {
                       <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <span className="text-purple-600 text-sm">✓</span>
                       </div>
-                      <p className="text-gray-700">
+                      <p className="text-sm text-gray-700">
                         <strong>Formato dinámico HTML</strong> - No un PDF estático, contenido interactivo
                       </p>
                     </div>
@@ -166,7 +163,7 @@ export default function InfoproductosPage() {
                   href="https://www.instagram.com/gabyneuropedia/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full bg-purple-600 text-white text-center px-8 py-5 rounded-xl font-bold text-lg hover:bg-purple-700 transition shadow-lg"
+                  className="block w-full bg-purple-600 text-white text-center px-6 py-4 rounded-xl font-bold text-base hover:bg-purple-700 transition shadow-lg"
                 >
                   Comprar Ahora
                 </Link>
@@ -183,7 +180,7 @@ export default function InfoproductosPage() {
               </div>
 
               {/* Product Image/Header */}
-              <div className="bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 p-12 text-white text-center relative overflow-hidden">
+              <div className="bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 p-8 lg:p-10 text-white text-center relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                   <Image
                     src="/images/22-02-01-15-59-49-938_deco.jpg"
@@ -193,27 +190,27 @@ export default function InfoproductosPage() {
                   />
                 </div>
                 <div className="relative z-10">
-                  <div className="text-6xl mb-6">📱</div>
-                  <h2 className="font-cormorant text-4xl font-bold mb-4">
+                  <div className="text-4xl lg:text-5xl mb-4">📱</div>
+                  <h2 className="font-cormorant text-2xl lg:text-3xl font-bold mb-3">
                     Tu Rastreador TDAH a la Medida
                   </h2>
-                  <p className="text-xl text-gray-300">
-                    Aplicación de seguimiento del tratamiento
+                  <p className="text-base lg:text-lg text-gray-300">
+                    Bitácora para compartir observaciones con tu equipo clínico
                   </p>
                 </div>
               </div>
 
               {/* Product Content */}
-              <div className="p-10">
+              <div className="p-6 lg:p-8">
                 {/* Pricing Options */}
                 <PricingSelector />
 
                 {/* Features */}
                 <div className="mb-8">
-                  <h3 className="font-cormorant text-2xl font-bold text-slate-900 mb-6 text-center">
+                  <h3 className="font-cormorant text-xl font-bold text-slate-900 mb-4 text-center">
                     Características:
                   </h3>
-                  <div className="space-y-4">
+                  <div className="space-y-3">
                     <div className="flex items-start gap-3">
                       <div className="w-6 h-6 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <span className="text-teal-600 text-sm">✓</span>
@@ -286,7 +283,7 @@ export default function InfoproductosPage() {
                   href="https://www.instagram.com/gabyneuropedia/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white text-center px-8 py-5 rounded-xl font-bold text-lg hover:from-orange-600 hover:to-orange-700 transition shadow-lg"
+                  className="block w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white text-center px-6 py-4 rounded-xl font-bold text-base hover:from-orange-600 hover:to-orange-700 transition shadow-lg"
                 >
                   🚀 Acceso a la App
                 </Link>
