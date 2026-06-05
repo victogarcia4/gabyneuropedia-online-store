@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Método CLARO - Acompañamiento Neurológico',
-  description: 'Metodología integral para el diagnóstico y acompañamiento de condiciones neurológicas. Enfoque científico, humano y personalizado.',
+  description: 'Metodología integral para pasar del diagnóstico que aterra al diagnóstico que ilumina, con un plan familiar a la medida.',
 }
 
 export default function MetodoClaroPage() {
@@ -59,8 +59,8 @@ export default function MetodoClaroPage() {
               Método CLARO
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              Una metodología integral para el acompañamiento de condiciones neurológicas,
-              basada en <strong>ciencia, empatía y resultados medibles</strong>.
+              Una metodología para convertir el diagnóstico en claridad, contexto y plan,
+              basada en <strong>ciencia, empatía y acompañamiento familiar real</strong>.
             </p>
           </div>
 
@@ -87,12 +87,12 @@ export default function MetodoClaroPage() {
             ¿Qué es el Método CLARO?
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Es un enfoque estructurado en <strong>5 pilares fundamentales</strong> que guían el proceso de diagnóstico,
-            tratamiento y acompañamiento de condiciones neurológicas en todas las edades.
+            Es un enfoque estructurado en <strong>5 pilares fundamentales</strong> que guían el proceso de comprensión,
+            orientación y acompañamiento de familias frente a autismo, TDAH, epilepsia, migraña, aprendizaje y enfermedades raras.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
-            No es solo un protocolo médico: es un camino de transformación donde las familias pasan del miedo
-            a la claridad, y de la incertidumbre al empoderamiento.
+            No es solo un protocolo: es la teoría del sastre aplicada al cuidado neurológico, un camino para que cada familia
+            encuentre un plan a la medida y pase del miedo a la claridad.
           </p>
         </div>
       </section>
@@ -211,7 +211,7 @@ export default function MetodoClaroPage() {
             </div>
             <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-teal-500">
               <p className="text-lg text-gray-700">
-                ✓ Adultos con condiciones neurológicas en busca de <strong>acompañamiento profesional</strong>
+                ✓ Familias que conviven con TDAH, epilepsia, migraña, trastornos del movimiento o enfermedades raras y buscan <strong>acompañamiento profesional</strong>
               </p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-teal-500">
@@ -230,8 +230,8 @@ export default function MetodoClaroPage() {
             Comienza tu camino con el Método CLARO
           </h2>
           <p className="text-xl mb-8 text-teal-100 leading-relaxed">
-            Agenda una primera consultoría y descubre cómo esta metodología puede transformar
-            la experiencia de tu familia con las condiciones neurológicas.
+            Agenda una primera consultoría y descubre cómo esta metodología puede ordenar dudas,
+            prioridades y próximos pasos para tu familia.
           </p>
           <Link
             href="/servicios/asesorias"

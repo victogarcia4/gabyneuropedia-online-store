@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Talleres Grupales',
-  description: 'Sesiones educativas en grupo sobre condiciones neurológicas.',
+  description: 'Talleres grupales para familias, escuelas y comunidades sobre neurodesarrollo, TEA, TDAH, aprendizaje y acompañamiento familiar.',
 }
 
 export default function TalleresPage() {
@@ -17,20 +17,27 @@ export default function TalleresPage() {
           Talleres Grupales
         </h1>
         <p className="text-xl text-gray-600 mb-12">
-          Sesiones educativas en grupo
+          Educación neuropediátrica para familias, escuelas y comunidades
         </p>
 
         <div className="bg-white rounded-2xl p-12 shadow-xl border border-gray-200 mb-8">
-          <p className="text-lg text-gray-600 mb-8">
-            Esta página está en construcción. Para más información sobre talleres grupales,
-            por favor contáctame directamente.
+          <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+            Talleres para traducir diagnósticos, conductas y dudas frecuentes en herramientas prácticas. Ideales para
+            padres, docentes y equipos que desean acompañar mejor a niños neurodivergentes desde la evidencia, la
+            empatía y el trabajo en equipo.
+          </p>
+          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            Podemos trabajar temas como autismo, TDAH, trastornos del aprendizaje, altas capacidades, intervención
+            temprana y comunicación entre familia, escuela y equipo clínico.
           </p>
 
           <Link
-            href="/contacto"
+            href="https://www.instagram.com/gabyneuropedia/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-teal-500 text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-teal-600 transition shadow-lg"
           >
-            Contactar para Más Información
+            Solicitar Taller
           </Link>
         </div>
       </div>

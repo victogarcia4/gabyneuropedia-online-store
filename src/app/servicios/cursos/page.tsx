@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Cursos',
-  description: 'Formación especializada online sobre condiciones neurológicas.',
+  description: 'Formación especializada online para familias, docentes y profesionales sobre neurodesarrollo, TDAH, TEA y acompañamiento familiar.',
 }
 
 export default function CursosPage() {
@@ -17,20 +17,25 @@ export default function CursosPage() {
           Cursos
         </h1>
         <p className="text-xl text-gray-600 mb-12">
-          Formación especializada online
+          Formación para comprender, acompañar y decidir mejor
         </p>
 
         <div className="bg-white rounded-2xl p-12 shadow-xl border border-gray-200 mb-8">
-          <p className="text-lg text-gray-600 mb-8">
-            Esta página está en construcción. Para más información sobre cursos disponibles,
-            por favor contáctame directamente.
+          <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+            Cursos diseñados para llevar la neurología compleja a un lenguaje claro, sin perder rigor científico.
+            El foco está en empoderar a padres, docentes y profesionales para reconocer señales, entender el impacto
+            funcional y acompañar con mejores herramientas.
+          </p>
+          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            Próximas líneas de contenido: TDAH sin filtros, autismo puertas adentro, neurodiversidad y aprendizaje,
+            y señales de alerta en neurodesarrollo.
           </p>
 
           <Link
-            href="/contacto"
+            href="/servicios/infoproductos"
             className="inline-block bg-teal-500 text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-teal-600 transition shadow-lg"
           >
-            Contactar para Más Información
+            Ver Recursos Disponibles
           </Link>
         </div>
       </div>

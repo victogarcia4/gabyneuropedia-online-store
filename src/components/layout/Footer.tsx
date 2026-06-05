@@ -20,10 +20,10 @@ export default function Footer() {
               </Link>
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
-              Consultora en Salud Neurológica. Neuróloga Pediátrica Venezolana y MSN Family Nurse Practitioner.
+              Neuróloga Pediátrica, investigadora clínica, escritora y Family Nurse Practitioner en Houston.
             </p>
             <p className="text-gray-400 text-sm">
-              Cobertura: LATAM, USA y España
+              Trayectoria: Sudamérica, Europa y Norteamérica
             </p>
           </div>
 
@@ -57,7 +57,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contacto" className="text-gray-400 hover:text-teal-400 transition">
+                <Link href="/servicios/asesorias" className="text-gray-400 hover:text-teal-400 transition">
                   Contacto
                 </Link>
               </li>

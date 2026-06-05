@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Sobre Mí - Dra. María Gabriela Jiménez',
-  description: 'Neuróloga Pediátrica Venezolana y MSN Family Nurse Practitioner con formación internacional en USA y España. Especialista en condiciones neurológicas.',
+  description: 'Neuróloga Pediátrica, investigadora clínica, escritora y Family Nurse Practitioner en Houston, con trayectoria en Sudamérica, Europa y Norteamérica.',
 }
 
 export default function SobreMiPage() {
@@ -12,7 +12,7 @@ export default function SobreMiPage() {
     "Médico Cirujano · LUZ, Venezuela",
     "Pediatría · ULA, Mérida",
     "Neurología Pediátrica · LUZ",
-    "MSN Family Nurse Practitioner",
+    "Family Nurse Practitioner · Houston, Texas",
     "Estancia · Sant Joan de Déu, Barcelona",
     "Dipl. Pediatría Tropical · Carlos III, Madrid",
     "Locutora Certificada · LUZ",
@@ -47,13 +47,13 @@ export default function SobreMiPage() {
                 Sobre Mí
               </span>
               <h1 className="font-cormorant text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
-                La doctora que<br />escucha antes de recetar.
+                La doctora que<br />escucha antes de orientar.
               </h1>
               <p className="text-base text-gray-700 leading-relaxed mb-4">
-                Soy la <strong>Dra. María Gabriela Jiménez Méndez</strong>, Neuróloga Pediátrica Venezolana y <strong>MSN Family Nurse Practitioner</strong> con formación internacional en USA, y España. Investigadora clínica, escritora y conferencista comprometida con el bienestar neurológico infantil y familiar.
+                Soy la <strong>Dra. María Gabriela Jiménez Méndez</strong>, Neuróloga Pediátrica venezolana, investigadora clínica, escritora, conferencista y <strong>Family Nurse Practitioner</strong> en Houston. Mi formación y práctica cruzan Sudamérica, Europa y Norteamérica, una trayectoria que me permite mirar el diagnóstico con rigor, contexto y sensibilidad cultural.
               </p>
               <p className="text-base text-gray-700 leading-relaxed mb-8">
-                Autora de <em>"El Autismo Puertas Adentro"</em> y <em>"Manual de Urgencias Pediátricas"</em>. Divulgo neurología con ciencia, corazón y lenguaje accesible para todas las familias.
+                Autora de <em>"El Autismo Puertas Adentro"</em> y <em>"Manual de Urgencias Pediátricas"</em>. Divulgo neurología con ciencia, corazón y lenguaje accesible para familias que transitan autismo, TDAH, epilepsia, migraña, trastornos del movimiento y enfermedades raras.
               </p>
 
               {/* CTA */}
@@ -109,12 +109,12 @@ export default function SobreMiPage() {
             Mi Misión
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Acompañar a las familias en el proceso de comprensión, diagnóstico y manejo de condiciones neurológicas,
-            brindando herramientas científicas y emocionales para transformar el miedo en empoderamiento.
+            Acercar la neurología pediátrica compleja a las familias con lenguaje claro, rigor científico y acompañamiento humano,
+            especialmente en autismo, TDAH, epilepsia, migraña, trastornos del movimiento y enfermedades raras.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
-            Creo en la medicina humanizada, en la escucha activa, y en que cada familia merece información clara,
-            evidencia científica actualizada y un espacio seguro para crecer.
+            Creo en la medicina humanizada, en la escucha activa y en que cada familia merece pasar del diagnóstico que aterra
+            al diagnóstico que ilumina: información clara, evidencia actualizada y un plan a la medida.
           </p>
         </div>
       </section>
@@ -135,7 +135,7 @@ export default function SobreMiPage() {
                 El Autismo Puertas Adentro
               </h3>
               <p className="text-gray-600 text-center">
-                Una guía honesta y científica para familias que navegan el espectro autista.
+                Una mirada clínica y humana al TEA, escrita para familias que desean abrir puertas con ciencia, empatía y conciencia de la diversidad.
               </p>
               <p className="text-teal-600 text-center mt-4 font-semibold">
                 Ver libro →
@@ -161,7 +161,7 @@ export default function SobreMiPage() {
             ¿Lista/o para comenzar?
           </h2>
           <p className="text-xl mb-8 text-teal-100">
-            Agenda tu primera consultoría y descubre cómo puedo acompañarte
+            Agenda tu primera consultoría y demos forma a un plan claro para tu familia
           </p>
           <Link
             href="/servicios/asesorias"

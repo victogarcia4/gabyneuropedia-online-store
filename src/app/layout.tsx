@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: '%s | Dra. Gabriela Jiménez',
   },
   description:
-    'Consultora en Salud Neurológica. Acompañamiento diagnóstico y terapéutico en todas las condiciones neurológicas. Autismo, TEA, Trastornos del Aprendizaje, Neurodesarrollo y más. Servicios online para LATAM y España.',
+    'Dra. María Gabriela Jiménez Méndez: neuróloga pediatra, investigadora clínica, escritora y Family Nurse Practitioner en Houston. Acompañamiento en autismo, TDAH, epilepsia, migraña y enfermedades raras.',
   keywords: [
     'consultoría neurológica',
     'acompañamiento diagnóstico',
@@ -35,7 +35,9 @@ export const metadata: Metadata = {
     'TEA',
     'trastornos del aprendizaje',
     'neurodesarrollo',
-    'condiciones neurológicas',
+    'enfermedades raras',
+    'epilepsia infantil',
+    'migraña',
     'gabyneuropedia',
     'consulta online',
   ],
@@ -48,7 +50,7 @@ export const metadata: Metadata = {
     url: '/',
     siteName: 'GabyNeuroPedia',
     title: 'Dra. María Gabriela Jiménez | Consultoría en Salud Neurológica',
-    description: 'Consultora en Salud Neurológica. Acompañamiento diagnóstico y terapéutico en todas las condiciones neurológicas.',
+    description: 'Neuropediatría científica y profundamente humana para familias que buscan claridad diagnóstica.',
     images: [
       {
         url: '/images/hero-dra-gabriela.png',
@@ -61,7 +63,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Dra. María Gabriela Jiménez | Neuróloga Pediátrica',
-    description: 'Neuróloga Pediátrica especializada en Autismo, TEA y Neurodesarrollo',
+    description: 'Neuróloga Pediátrica, investigadora clínica y Family Nurse Practitioner en Houston',
     images: ['/images/hero-dra-gabriela.png'],
   },
   robots: {

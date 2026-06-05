@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Blog - Artículos sobre Neurología',
-  description: 'Artículos, guías y recursos sobre condiciones neurológicas, tratamientos y acompañamiento familiar.',
+  description: 'Artículos, guías y recursos sobre autismo, TDAH, neurodesarrollo, enfermedades raras y acompañamiento familiar.',
 }
 
 export default function BlogPage() {
@@ -17,14 +17,18 @@ export default function BlogPage() {
           Artículos y Recursos
         </h1>
         <p className="text-xl text-gray-600 mb-12">
-          Conocimiento científico y práctico sobre neurología
+          Neurología con rigor científico, lenguaje claro y mirada familiar
         </p>
 
         <div className="bg-white rounded-2xl p-12 shadow-xl border border-gray-200 mb-8">
           <div className="text-6xl mb-6">📝</div>
-          <p className="text-lg text-gray-600 mb-8">
-            Esta página está en construcción. Pronto encontrarás artículos, guías y recursos
-            sobre condiciones neurológicas, tratamientos efectivos y acompañamiento familiar.
+          <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+            Este espacio reunirá artículos y guías para familias, docentes y profesionales que buscan comprender mejor
+            el autismo, el TDAH, la epilepsia, la migraña, los trastornos del aprendizaje y las enfermedades raras.
+          </p>
+          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            Mientras se publica la biblioteca completa, puedes seguir el contenido educativo de GabyNeuroPedia en Instagram:
+            ciencia, corazón y respuestas claras para acompañar mejor.
           </p>
 
           <div className="space-y-4 mb-8">
@@ -45,10 +49,10 @@ export default function BlogPage() {
           </div>
 
           <Link
-            href="/contacto"
+            href="/servicios/asesorias"
             className="inline-block bg-teal-500 text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-teal-600 transition shadow-lg"
           >
-            Contactar para Más Información
+            Solicitar Asesoría
           </Link>
         </div>
 
@@ -60,7 +64,7 @@ export default function BlogPage() {
               Neurología
             </h3>
             <p className="text-sm text-gray-600">
-              Artículos sobre condiciones neurológicas y tratamientos
+              Artículos sobre autismo, TDAH, epilepsia, migraña y enfermedades raras
             </p>
           </div>
           <div className="bg-gradient-to-br from-purple-50 to-white rounded-xl p-6 border border-purple-100">

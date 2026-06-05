@@ -65,7 +65,7 @@ export default function Header() {
                     className="block px-6 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 transition"
                   >
                     <div className="font-semibold">Asesorías Personalizadas</div>
-                    <div className="text-sm text-gray-500">Asesoría familiar</div>
+                    <div className="text-sm text-gray-500">Claridad diagnóstica y plan</div>
                   </Link>
 
                   <Link
@@ -73,7 +73,7 @@ export default function Header() {
                     className="block px-6 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 transition"
                   >
                     <div className="font-semibold">Talleres Grupales</div>
-                    <div className="text-sm text-gray-500">Sesiones educativas en grupo</div>
+                    <div className="text-sm text-gray-500">Familias, escuelas y equipos</div>
                   </Link>
 
                   <Link
@@ -81,7 +81,7 @@ export default function Header() {
                     className="block px-6 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 transition"
                   >
                     <div className="font-semibold">Conferencias</div>
-                    <div className="text-sm text-gray-500">Charlas presenciales y online</div>
+                    <div className="text-sm text-gray-500">Enfermedades neurológicas y neurodiversidad</div>
                   </Link>
 
                   <Link
@@ -89,7 +89,7 @@ export default function Header() {
                     className="block px-6 py-3 text-gray-700 hover:bg-teal-50 hover:text-teal-700 transition"
                   >
                     <div className="font-semibold">Cursos</div>
-                    <div className="text-sm text-gray-500">Formación especializada online</div>
+                    <div className="text-sm text-gray-500">Formación con lenguaje claro</div>
                   </Link>
 
                   <div className="border-t border-gray-100 my-2"></div>

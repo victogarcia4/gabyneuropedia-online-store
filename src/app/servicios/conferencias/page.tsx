@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Conferencias',
-  description: 'Charlas presenciales y online sobre neurología y condiciones neurológicas.',
+  description: 'Charlas presenciales y online sobre autismo, TDAH, neurodesarrollo, enfermedades raras, epilepsia, migraña y trastornos del movimiento.',
 }
 
 export default function ConferenciasPage() {
@@ -17,20 +17,28 @@ export default function ConferenciasPage() {
           Conferencias
         </h1>
         <p className="text-xl text-gray-600 mb-12">
-          Charlas presenciales y online
+          Charlas con ciencia, lenguaje claro y sensibilidad familiar
         </p>
 
         <div className="bg-white rounded-2xl p-12 shadow-xl border border-gray-200 mb-8">
-          <p className="text-lg text-gray-600 mb-8">
-            Esta página está en construcción. Para contratar una conferencia o charla,
-            por favor contáctame directamente.
+          <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+            Conferencias para familias, colegios, equipos de salud y comunidades que necesitan comprender mejor
+            el neurodesarrollo. La Dra. Gabriela aborda autismo, TDAH, epilepsia infantil, migraña, trastornos del
+            movimiento, corea y enfermedades raras desde una mirada clínica y profundamente humana.
+          </p>
+          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            Temas sugeridos: <strong>Autismo puertas adentro</strong>, <strong>TDAH sin filtros</strong>,
+            <strong> enfermedades raras y neurogenéticas</strong>, <strong>neurodiversidad y aprendizaje</strong>,
+            y <strong>migraña de la clínica a la vivencia</strong>.
           </p>
 
           <Link
-            href="/contacto"
+            href="https://www.instagram.com/gabyneuropedia/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-teal-500 text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-teal-600 transition shadow-lg"
           >
-            Contactar para Más Información
+            Solicitar una Conferencia
           </Link>
         </div>
       </div>
