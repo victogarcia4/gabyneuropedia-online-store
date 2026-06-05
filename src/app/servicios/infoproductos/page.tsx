@@ -158,7 +158,9 @@ export default function InfoproductosPage() {
 
                 {/* CTA Button */}
                 <Link
-                  href="/api/checkout?buy=ebook"
+                  href="https://buy.stripe.com/3cIdRa8AV2UA0ABcHI8IU00"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block w-full bg-purple-600 text-white text-center px-6 py-4 rounded-xl font-bold text-base hover:bg-purple-700 transition shadow-lg hover:shadow-purple-500/20"
                 >
                   Comprar Ahora
@@ -188,10 +190,10 @@ export default function InfoproductosPage() {
                 <div className="relative z-10">
                   <div className="text-4xl lg:text-5xl mb-4">📱</div>
                   <h2 className="font-cormorant text-2xl lg:text-3xl font-bold mb-3">
-                    Tu Rastreador TDAH a la Medida
+                    Tu rastreador TDAH, es tu 'TRAJE A LA MEDIDA'
                   </h2>
                   <p className="text-base lg:text-lg text-gray-300">
-                    Bitácora para compartir observaciones con tu equipo clínico
+                    bitacora para compartir observaciones con tu equipo clinico
                   </p>
                 </div>
               </div>
