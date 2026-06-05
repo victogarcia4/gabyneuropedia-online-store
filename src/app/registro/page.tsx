@@ -1,11 +1,11 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, Suspense } from 'react'
 import { supabaseBrowser } from '@/lib/supabase'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
 
-export default function RegisterPage() {
+function RegisterForm() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const buyTarget = searchParams.get('buy') // 'ebook', 'app_monthly', 'app_yearly'
@@ -25,7 +25,7 @@ export default function RegisterPage() {
         buyTarget ? `?buy=${buyTarget}` : ''
       }`
 
-      const { data, error } = await supabaseBrowser.auth.signUp({
+      const { error } = await supabaseBrowser.auth.signUp({
         email,
         password,
         options: {
@@ -52,92 +52,100 @@ export default function RegisterPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-teal-950 flex items-center justify-center px-4 py-24">
-      <div className="max-w-md w-full bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 shadow-2xl text-white">
-        <div className="text-center mb-8">
-          <Link href="/" className="inline-block text-2xl font-cormorant font-bold text-teal-300 mb-2">
-            GabyNeuroPedia
-          </Link>
-          <h1 className="font-cormorant text-3xl font-bold">Crear tu Cuenta</h1>
-          <p className="text-sm text-gray-300 mt-2">
-            Regístrate para asegurar la confirmación de tu correo y acceder a tus productos
-          </p>
-        </div>
-
-        {buyTarget && (
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-4 mb-6 text-center">
-            <span className="text-xs uppercase font-bold tracking-wider text-teal-300 block mb-1">
-              Producto Seleccionado
-            </span>
-            <span className="text-sm font-semibold">
-              {buyTarget === 'ebook' && 'eBook: Mitos y Realidades del Tratamiento de TDAH ($27)'}
-              {buyTarget === 'app_monthly' && 'App Bitácora TDAH - Suscripción Mensual ($11.99)'}
-              {buyTarget === 'app_yearly' && 'App Bitácora TDAH - Suscripción Anual ($97)'}
-            </span>
-          </div>
-        )}
-
-        {message && (
-          <div
-            className={`p-4 rounded-xl mb-6 text-sm font-medium ${
-              message.type === 'success'
-                ? 'bg-teal-500/20 border border-teal-500/30 text-teal-200'
-                : 'bg-rose-500/20 border border-rose-500/30 text-rose-200'
-            }`}
-          >
-            {message.text}
-          </div>
-        )}
-
-        <form onSubmit={handleRegister} className="space-y-5">
-          <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-2">
-              Correo Electrónico
-            </label>
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="w-full bg-white/5 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-teal-400 transition"
-              placeholder="tu@email.com"
-              required
-            />
-          </div>
-
-          <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-2">
-              Contraseña
-            </label>
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="w-full bg-white/5 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-teal-400 transition"
-              placeholder="••••••••"
-              required
-              minLength={6}
-            />
-          </div>
-
-          <button
-            type="submit"
-            disabled={loading}
-            className="w-full bg-teal-500 hover:bg-teal-600 active:bg-teal-700 text-white font-bold py-3.5 px-6 rounded-xl transition-all shadow-lg hover:shadow-teal-500/20 disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            {loading ? 'Creando cuenta...' : 'Registrarme y Confirmar'}
-          </button>
-        </form>
-
-        <div className="mt-8 text-center text-sm text-gray-300 border-t border-white/10 pt-6">
-          ¿Ya tienes cuenta?{' '}
-          <Link
-            href={`/login${buyTarget ? `?buy=${buyTarget}` : ''}`}
-            className="text-teal-400 font-bold hover:underline"
-          >
-            Inicia Sesión
-          </Link>
-        </div>
+    <div className="max-w-md w-full bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 shadow-2xl text-white">
+      <div className="text-center mb-8">
+        <Link href="/" className="inline-block text-2xl font-cormorant font-bold text-teal-300 mb-2">
+          GabyNeuroPedia
+        </Link>
+        <h1 className="font-cormorant text-3xl font-bold">Crear tu Cuenta</h1>
+        <p className="text-sm text-gray-300 mt-2">
+          Regístrate para asegurar la confirmación de tu correo y acceder a tus productos
+        </p>
       </div>
+
+      {buyTarget && (
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-4 mb-6 text-center">
+          <span className="text-xs uppercase font-bold tracking-wider text-teal-300 block mb-1">
+            Producto Seleccionado
+          </span>
+          <span className="text-sm font-semibold">
+            {buyTarget === 'ebook' && 'eBook: Mitos y Realidades del Tratamiento de TDAH ($27)'}
+            {buyTarget === 'app_monthly' && 'App Bitácora TDAH - Suscripción Mensual ($11.99)'}
+            {buyTarget === 'app_yearly' && 'App Bitácora TDAH - Suscripción Anual ($97)'}
+          </span>
+        </div>
+      )}
+
+      {message && (
+        <div
+          className={`p-4 rounded-xl mb-6 text-sm font-medium ${
+            message.type === 'success'
+              ? 'bg-teal-500/20 border border-teal-500/30 text-teal-200'
+              : 'bg-rose-500/20 border border-rose-500/30 text-rose-200'
+          }`}
+        >
+          {message.text}
+        </div>
+      )}
+
+      <form onSubmit={handleRegister} className="space-y-5">
+        <div>
+          <label className="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-2">
+            Correo Electrónico
+          </label>
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="w-full bg-white/5 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-teal-400 transition"
+            placeholder="tu@email.com"
+            required
+          />
+        </div>
+
+        <div>
+          <label className="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-2">
+            Contraseña
+          </label>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className="w-full bg-white/5 border border-white/20 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-teal-400 transition"
+            placeholder="••••••••"
+            required
+            minLength={6}
+          />
+        </div>
+
+        <button
+          type="submit"
+          disabled={loading}
+          className="w-full bg-teal-500 hover:bg-teal-600 active:bg-teal-700 text-white font-bold py-3.5 px-6 rounded-xl transition-all shadow-lg hover:shadow-teal-500/20 disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          {loading ? 'Creando cuenta...' : 'Registrarme y Confirmar'}
+        </button>
+      </form>
+
+      <div className="mt-8 text-center text-sm text-gray-300 border-t border-white/10 pt-6">
+        ¿Ya tienes cuenta?{' '}
+        <Link
+          href={`/login${buyTarget ? `?buy=${buyTarget}` : ''}`}
+          className="text-teal-400 font-bold hover:underline"
+        >
+          Inicia Sesión
+        </Link>
+      </div>
+    </div>
+  )
+}
+
+export default function RegisterPage() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-teal-950 flex items-center justify-center px-4 py-24">
+      <Suspense fallback={<div className="text-white text-center">Cargando formulario...</div>}>
+        <RegisterForm />
+      </Suspense>
     </div>
   )
 }
