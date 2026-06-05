@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import PricingSelector from '@/components/infoproductos/PricingSelector'
+import CheckoutButton from '@/components/infoproductos/CheckoutButton'
 import ProductsInfiniteBanner from '@/components/shared/ProductsInfiniteBanner'
 
 export const metadata: Metadata = {
@@ -156,14 +157,12 @@ export default function InfoproductosPage() {
                 </div>
 
                 {/* CTA Button */}
-                <Link
-                  href="https://www.instagram.com/gabyneuropedia/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full bg-purple-600 text-white text-center px-6 py-4 rounded-xl font-bold text-base hover:bg-purple-700 transition shadow-lg"
+                <CheckoutButton
+                  buyTarget="ebook"
+                  className="block w-full bg-purple-600 text-white text-center px-6 py-4 rounded-xl font-bold text-base hover:bg-purple-700 transition shadow-lg hover:shadow-purple-500/20"
                 >
                   Comprar Ahora
-                </Link>
+                </CheckoutButton>
               </div>
             </div>
 
@@ -274,16 +273,6 @@ export default function InfoproductosPage() {
                     de observaciones con tu equipo clínico.
                   </p>
                 </div>
-
-                {/* CTA Button */}
-                <Link
-                  href="https://www.instagram.com/gabyneuropedia/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white text-center px-6 py-4 rounded-xl font-bold text-base hover:from-orange-600 hover:to-orange-700 transition shadow-lg"
-                >
-                  🚀 Acceso a la App
-                </Link>
               </div>
             </div>
           </div>
