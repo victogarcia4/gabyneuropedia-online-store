@@ -27,9 +27,6 @@ export default function InfoproductosPage() {
         </div>
       </section>
 
-      {/* Products Infinite Banner */}
-      <ProductsInfiniteBanner />
-
       {/* Products Grid */}
       <section className="py-12 px-4">
         <div className="max-w-7xl mx-auto">
@@ -292,6 +289,9 @@ export default function InfoproductosPage() {
           </div>
         </div>
       </section>
+
+      {/* Products Infinite Banner */}
+      <ProductsInfiniteBanner />
 
       {/* FAQ Section */}
       <section className="py-20 px-4 bg-gray-50">
