@@ -1,11 +1,15 @@
 'use client'
 
-import { useState } from 'react'
+import { ReactNode, useState } from 'react'
 import Link from 'next/link'
 
 type PlanType = 'monthly' | 'yearly'
 
-export default function PricingSelector() {
+type PricingSelectorProps = {
+  children?: ReactNode
+}
+
+export default function PricingSelector({ children }: PricingSelectorProps) {
   const [selectedPlan, setSelectedPlan] = useState<PlanType>('yearly') // Default to yearly (recommended)
 
   return (
@@ -58,9 +62,17 @@ export default function PricingSelector() {
         </div>
       </div>
 
+      {children}
+
       {/* Direct Link to Checkout */}
       <Link
-        href={`/api/checkout?buy=${selectedPlan === 'monthly' ? 'app_monthly' : 'app_yearly'}`}
+        href={
+          selectedPlan === 'monthly'
+            ? 'https://buy.stripe.com/4gMdRag3n0Ms0ABcHI8IU01'
+            : 'https://buy.stripe.com/7sY00keZjbr6cjj6jk8IU02'
+        }
+        target="_blank"
+        rel="noopener noreferrer"
         className="block w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white text-center px-6 py-4 rounded-xl font-bold text-base hover:from-orange-600 hover:to-orange-700 transition shadow-lg hover:shadow-orange-500/20"
       >
         🚀 Obtener Acceso a la App

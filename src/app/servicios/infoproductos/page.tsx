@@ -201,7 +201,7 @@ export default function InfoproductosPage() {
               {/* Product Content */}
               <div className="p-6 lg:p-8">
                 {/* Pricing Options */}
-                <PricingSelector />
+                <PricingSelector>
 
                 {/* Features */}
                 <div className="mb-8">
@@ -268,13 +268,14 @@ export default function InfoproductosPage() {
                 </div>
 
                 {/* Note */}
-                <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-6 text-sm text-blue-900">
+                <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 text-sm text-blue-900">
                   <p className="font-semibold mb-1">💡 Nota importante:</p>
                   <p>
                     Esta app no sustituye consulta médica. Es un bitácora para facilitar el intercambio
                     de observaciones con tu equipo clínico.
                   </p>
                 </div>
+                </PricingSelector>
               </div>
             </div>
           </div>
