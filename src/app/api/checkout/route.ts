@@ -25,7 +25,7 @@ export async function GET(request: Request) {
       priceId = process.env.STRIPE_PRICE_APP_MONTHLY || 'price_1Qx_monthly_placeholder'
       mode = 'subscription'
     } else if (buyTarget === 'app_yearly') {
-      priceId = process.env.STRIPE_PRICE_APP_YEARLY || 'price_1Qx_yearly_placeholder'
+      priceId = process.env.STRIPE_PRICE_APP_YEARLY || process.env.STRIPE_PRICE_App_YEARLY || 'price_1Qx_yearly_placeholder'
       mode = 'subscription'
     } else {
       return NextResponse.json({ error: 'Invalid buy target' }, { status: 400 })
@@ -80,7 +80,7 @@ export async function POST(request: Request) {
       priceId = process.env.STRIPE_PRICE_APP_MONTHLY || 'price_1Qx_monthly_placeholder'
       mode = 'subscription'
     } else if (buyTarget === 'app_yearly') {
-      priceId = process.env.STRIPE_PRICE_APP_YEARLY || 'price_1Qx_yearly_placeholder'
+      priceId = process.env.STRIPE_PRICE_APP_YEARLY || process.env.STRIPE_PRICE_App_YEARLY || 'price_1Qx_yearly_placeholder'
       mode = 'subscription'
     } else {
       return NextResponse.json({ error: 'Invalid buy target' }, { status: 400 })
