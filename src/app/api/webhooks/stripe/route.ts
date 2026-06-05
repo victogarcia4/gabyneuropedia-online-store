@@ -3,11 +3,11 @@ import Stripe from 'stripe'
 import { getSupabaseServerClient } from '@/lib/supabase'
 import { sendPurchaseConfirmationEmail } from '@/lib/mail'
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || '', {
-  apiVersion: '2025-02-24-preview' as any,
-})
-
 export async function POST(request: Request) {
+  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'sk_dummy_key_for_build', {
+    apiVersion: '2025-02-24-preview' as any,
+  })
+
   const body = await request.text()
   const sig = request.headers.get('stripe-signature') || ''
   const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET || ''

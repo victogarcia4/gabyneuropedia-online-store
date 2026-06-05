@@ -1,10 +1,10 @@
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY || 're_placeholder')
-
 export async function sendPurchaseConfirmationEmail(email: string, buyTarget: 'ebook' | 'app_monthly' | 'app_yearly') {
-  // Validate API key placeholder
-  if (!process.env.RESEND_API_KEY || process.env.RESEND_API_KEY.includes('placeholder')) {
+  const apiKey = process.env.RESEND_API_KEY
+
+  // Validate API key placeholder or empty
+  if (!apiKey || apiKey.includes('placeholder')) {
     console.warn('WARNING: RESEND_API_KEY is not configured. Email was not sent, but payment event was processed.')
     return { success: false, error: 'API key not configured' }
   }
@@ -18,7 +18,7 @@ export async function sendPurchaseConfirmationEmail(email: string, buyTarget: 'e
   if (buyTarget === 'ebook') {
     subject = '📚 ¡Tu eBook "Mitos y Realidades del Tratamiento de TDAH" está listo!'
     htmlContent = `
-      <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e2e8f0; rounded-radius: 12px;">
+      <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e2e8f0; border-radius: 12px;">
         <h2 style="color: #4c1d95; font-family: Georgia, serif; text-align: center;">¡Gracias por tu compra!</h2>
         <p style="font-size: 16px; line-height: 1.6; color: #334155;">
           Hola,
@@ -46,7 +46,7 @@ export async function sendPurchaseConfirmationEmail(email: string, buyTarget: 'e
     const isYearly = buyTarget === 'app_yearly'
     subject = `📱 ¡Bienvenido a tu Bitácora TDAH GabyNeuroPedia (${isYearly ? 'Plan Anual' : 'Plan Mensual'})!`
     htmlContent = `
-      <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e2e8f0; rounded-radius: 12px;">
+      <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e2e8f0; border-radius: 12px;">
         <h2 style="color: #ea580c; font-family: Georgia, serif; text-align: center;">¡Tu Bitácora TDAH está lista!</h2>
         <p style="font-size: 16px; line-height: 1.6; color: #334155;">
           Hola,
@@ -76,6 +76,9 @@ export async function sendPurchaseConfirmationEmail(email: string, buyTarget: 'e
   }
 
   try {
+    // Instantiate Resend dynamically
+    const resend = new Resend(apiKey)
+
     // Note: If using Resend sandbox/testing without a domain verified, you MUST use onboarding@resend.dev as the sender
     const fromSender = process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev'
     const { data, error } = await resend.emails.send({
