@@ -58,7 +58,8 @@ export async function GET(request: Request) {
   } catch (err: any) {
     console.error('Error creating checkout session via GET:', err)
     const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
-    return NextResponse.redirect(`${siteUrl}/servicios/infoproductos?error=internal-server-error`)
+    const errorMsg = encodeURIComponent(err.message || 'Unknown Error')
+    return NextResponse.redirect(`${siteUrl}/servicios/infoproductos?error=${errorMsg}`)
   }
 }
 
