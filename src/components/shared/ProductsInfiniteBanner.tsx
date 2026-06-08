@@ -11,7 +11,7 @@ const products = [
   },
   {
     name: 'Mitos y Realidades del Tratamiento de TDAH',
-    image: '/foto eBook tx tdah.png',
+    image: '/Portada ebook.jpeg',
     link: '/servicios/infoproductos',
   },
   {

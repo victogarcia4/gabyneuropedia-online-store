@@ -86,7 +86,7 @@ export default function InfoproductosPage() {
               {/* Product Image */}
               <div className="relative w-full">
                 <Image
-                  src="/foto eBook tx tdah.png"
+                  src="/Portada ebook.jpeg"
                   alt="eBook Mitos y Realidades del Tratamiento de TDAH"
                   width={600}
                   height={400}
